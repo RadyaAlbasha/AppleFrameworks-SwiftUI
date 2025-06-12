@@ -13,20 +13,20 @@ struct FrameworkGridView: View {
     
     
     var body: some View {
-        NavigationView {
-                List {
-                    ForEach(MockData.frameworks){ framework in
-                        NavigationLink(destination: FrameworkDetailView(framework: framework,
-                                                                        isShowingDetailView: $viewModel.isShowingDetailView)){
-                            FrameworkTitleView(framework: framework)
-                        }
+        NavigationStack {
+            List {
+                ForEach(MockData.frameworks){ framework in
+                    NavigationLink(value: framework) {
+                        FrameworkTitleView(framework: framework)
                     }
                 }
+            }
             .navigationTitle("🍎 Frameworks")
+            .navigationDestination(for: Framework.self) { framework in
+                FrameworkDetailView(framework: framework)
+            }
         }
         .accentColor(Color(.label)) // to change the back button Text color
-        
-        
     }
 }
 
