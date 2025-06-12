@@ -32,7 +32,7 @@ struct FrameworkDetailView: View {
             }
         }
         .fullScreenCover(isPresented: $isShowingSafariView ) {
-            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com  ")!)
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
         }
         
 //        .sheet(isPresented: $isShowingSafariView ) {
