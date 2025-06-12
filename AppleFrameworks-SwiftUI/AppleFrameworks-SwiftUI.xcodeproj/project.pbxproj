@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		85A5F53F2DFA42FD00848274 /* Stinsen in Frameworks */ = {isa = PBXBuildFile; productRef = 85A5F53E2DFA42FD00848274 /* Stinsen */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		85A5F52A2DFA205B00848274 /* AppleFrameworks-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleFrameworks-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -27,7 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A5F53F2DFA42FD00848274 /* Stinsen in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +65,6 @@
 			);
 			name = "AppleFrameworks-SwiftUI";
 			packageProductDependencies = (
-				85A5F53E2DFA42FD00848274 /* Stinsen */,
 			);
 			productName = "AppleFrameworks-SwiftUI";
 			productReference = 85A5F52A2DFA205B00848274 /* AppleFrameworks-SwiftUI.app */;
@@ -101,7 +95,6 @@
 			mainGroup = 85A5F5212DFA205B00848274;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				85A5F53D2DFA42FD00848274 /* XCRemoteSwiftPackageReference "stinsen" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 85A5F52B2DFA205B00848274 /* Products */;
@@ -329,25 +322,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		85A5F53D2DFA42FD00848274 /* XCRemoteSwiftPackageReference "stinsen" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rundfunk47/stinsen";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.13;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		85A5F53E2DFA42FD00848274 /* Stinsen */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 85A5F53D2DFA42FD00848274 /* XCRemoteSwiftPackageReference "stinsen" */;
-			productName = Stinsen;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85A5F5222DFA205B00848274 /* Project object */;
 }
